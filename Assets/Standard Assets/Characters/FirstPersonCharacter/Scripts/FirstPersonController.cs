@@ -248,7 +248,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 			if (hit.gameObject.name == "Enemy") {
 				Debug.Log ("HIT Enemy!");
-				SceneManager.LoadScene("FightScene");
+				SceneManager.LoadScene("BattleScene");
 			}
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below)

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{FE68E42A-C965-E7EE-19E1-66C9FBC13E2D}") = "FoodEscape", "Assembly-CSharp-firstpass.csproj", "{440794A4-F638-5622-F403-4E30BDCCB31F}"
 EndProject
+Project("{FE68E42A-C965-E7EE-19E1-66C9FBC13E2D}") = "FoodEscape", "Assembly-CSharp.csproj", "{2B43ADEA-893E-D64F-BAF8-ECBEE630A3EF}"
+EndProject
 Project("{FE68E42A-C965-E7EE-19E1-66C9FBC13E2D}") = "FoodEscape", "Assembly-CSharp-Editor.csproj", "{D9BBC232-8EDF-F4D7-D918-56D8755D732D}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{440794A4-F638-5622-F403-4E30BDCCB31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{440794A4-F638-5622-F403-4E30BDCCB31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{440794A4-F638-5622-F403-4E30BDCCB31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B43ADEA-893E-D64F-BAF8-ECBEE630A3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B43ADEA-893E-D64F-BAF8-ECBEE630A3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B43ADEA-893E-D64F-BAF8-ECBEE630A3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B43ADEA-893E-D64F-BAF8-ECBEE630A3EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D9BBC232-8EDF-F4D7-D918-56D8755D732D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D9BBC232-8EDF-F4D7-D918-56D8755D732D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9BBC232-8EDF-F4D7-D918-56D8755D732D}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
-using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -243,13 +242,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
-			Debug.Log ("Start");
             Rigidbody body = hit.collider.attachedRigidbody;
-
-			if (hit.gameObject.name == "Enemy") {
-				Debug.Log ("HIT Enemy!");
-				SceneManager.LoadScene("BattleScene");
-			}
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below)
             {
@@ -260,8 +253,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
-
-
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
     }

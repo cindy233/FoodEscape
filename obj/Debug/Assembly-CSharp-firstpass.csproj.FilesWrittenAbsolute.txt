@@ -32,3 +32,20 @@
 /Users/V/Dropbox/16S/game/FoodEscape/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/V/Dropbox/16S/game/FoodEscape/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/V/Dropbox/16S/game/FoodEscape/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/UnityEngine.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/UnityEditor.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Mono.Cecil.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Unity.DataContract.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Mono.Cecil.Mdb.dll

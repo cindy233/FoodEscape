@@ -20,14 +20,7 @@ public class selection : MonoBehaviour {
 		bool hit = Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out hitInfo);
 
 			if (hit) {
-				/*
-			if (hitInfo.collider.name == "taichi1") {
 
-				Debug.Log ("TaiCHI1 is selected");
-				selectedCharacter = 1;
-			
-			}
-*/
 				switch (hitInfo.collider.name) {
 
 				case "taichi1":
@@ -52,7 +45,7 @@ public class selection : MonoBehaviour {
 				// TODO: some warning message should be prompted up such as "No character is being selected"
 			} else {
 				PlayerPrefs.SetInt("selectedCharacter",selectedCharacter);
-				SceneManager.LoadScene ("SimulateFight");
+				SceneManager.LoadScene ("BattleScene");
 			}
 		}
 

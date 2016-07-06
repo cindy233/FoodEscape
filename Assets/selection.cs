@@ -6,9 +6,12 @@ public class selection : MonoBehaviour {
 
 	public int selectedCharacter = 0;
 	private bool select;
+	private GameObject characters;
+
 	// Use this for initialization
 	void Start () {
 	
+		characters = GameObject.Find ("CharacterSet");
 	}
 	
 	// Update is called once per frame
@@ -26,10 +29,16 @@ public class selection : MonoBehaviour {
 				case "taichi1":
 					Debug.Log ("TaiCHI1 is selected");
 					selectedCharacter = 1;
+					Rotate (240);
 					break;
 				case "unitychan":
 					Debug.Log ("Unity Chan is selected");
 					selectedCharacter = 2;
+					Rotate (0);
+					break;
+				case "querychan":
+					Debug.Log ("Query Chan is selected");
+					selectedCharacter = 3;
 					break;
 				default:
 				//selectedCharacter = 0;
@@ -57,5 +66,11 @@ public class selection : MonoBehaviour {
 			select = true;
 		}
 
+	}
+
+	void Rotate(float target){
+
+		float angle = Mathf.MoveTowardsAngle(characters.transform.eulerAngles.y, target, 145.0F * Time.deltaTime);
+		transform.eulerAngles = new Vector3(0, angle, 0);
 	}
 }

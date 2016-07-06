@@ -69,6 +69,7 @@
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\displaySettings.cs" />
      <Compile Include="Assets\selection.cs" />
+     <Compile Include="Assets\startAnimate.cs" />
      <Compile Include="Assets\startGame.cs" />
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />

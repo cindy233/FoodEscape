@@ -10,17 +10,22 @@ public class displaySettings : MonoBehaviour {
 	void Start () {
 		
 		selected = PlayerPrefs.GetInt ("selectedCharacter");
-		//taichi1 = GameObject.Find("taichi1");
+
 		switch (selected) {
 		case 1:
-			//taichi1.gameObject.SetActive (true);
 			transform.FindChild ("taichi1").gameObject.SetActive (true);
 			transform.FindChild ("unitychan").gameObject.SetActive (false);
+			transform.FindChild ("querychan").gameObject.SetActive (false);
 			break;
 		case 2:
-			//taichi1.gameObject.SetActive (true);
 			transform.FindChild ("taichi1").gameObject.SetActive (false);
 			transform.FindChild ("unitychan").gameObject.SetActive (true);
+			transform.FindChild ("querychan").gameObject.SetActive (false);
+			break;
+		case 3:
+			transform.FindChild ("taichi1").gameObject.SetActive (false);
+			transform.FindChild ("unitychan").gameObject.SetActive (false);
+			transform.FindChild ("querychan").gameObject.SetActive (true);
 			break;
 		default:
 			break;

@@ -68,7 +68,6 @@
      <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\displaySettings.cs" />
-     <Compile Include="Assets\rotate.cs" />
      <Compile Include="Assets\selection.cs" />
      <Compile Include="Assets\startGame.cs" />
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />

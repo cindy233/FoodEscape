@@ -7,6 +7,7 @@ public class selection : MonoBehaviour {
 	public int selectedCharacter = 0;
 	private bool select;
 	private GameObject characters;
+	private bool continueRotate = true;
 
 	// Use this for initialization
 	void Start () {
@@ -39,6 +40,7 @@ public class selection : MonoBehaviour {
 				case "querychan":
 					Debug.Log ("Query Chan is selected");
 					selectedCharacter = 3;
+					Rotate (120);
 					break;
 				default:
 				//selectedCharacter = 0;
@@ -46,8 +48,14 @@ public class selection : MonoBehaviour {
 				
 				}
 
+			} else {
+				continueRotate = true;
 			}
 		}
+
+		if(continueRotate)
+			characters.transform.Rotate (0, Time.deltaTime, 0);
+		
 		if (select) {
 			if (selectedCharacter == 0) {
 				select = false;
@@ -70,7 +78,8 @@ public class selection : MonoBehaviour {
 
 	void Rotate(float target){
 
-		float angle = Mathf.MoveTowardsAngle(characters.transform.eulerAngles.y, target, 145.0F * Time.deltaTime);
-		transform.eulerAngles = new Vector3(0, angle, 0);
+		continueRotate = false;
+		characters.transform.rotation = Quaternion.Euler(0, target, 0);
+
 	}
 }

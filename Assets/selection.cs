@@ -63,7 +63,7 @@ public class selection : MonoBehaviour {
 				// TODO: some warning message should be prompted up such as "No character is being selected"
 			} else {
 				PlayerPrefs.SetInt("selectedCharacter",selectedCharacter);
-				SceneManager.LoadScene ("BattleScene");
+				SceneManager.LoadScene ("Pacific");
 			}
 		}
 

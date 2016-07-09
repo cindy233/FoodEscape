@@ -7,8 +7,6 @@ Project("{FE68E42A-C965-E7EE-19E1-66C9FBC13E2D}") = "FoodEscape", "Assembly-CSha
 EndProject
 Project("{FE68E42A-C965-E7EE-19E1-66C9FBC13E2D}") = "FoodEscape", "Assembly-CSharp-Editor.csproj", "{D9BBC232-8EDF-F4D7-D918-56D8755D732D}"
 EndProject
-Project("{FE68E42A-C965-E7EE-19E1-66C9FBC13E2D}") = "FoodEscape", "Assembly-UnityScript.unityproj", "{AC86B7E6-82F6-71C5-B70C-82631F0F6518}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{D9BBC232-8EDF-F4D7-D918-56D8755D732D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9BBC232-8EDF-F4D7-D918-56D8755D732D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9BBC232-8EDF-F4D7-D918-56D8755D732D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC86B7E6-82F6-71C5-B70C-82631F0F6518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC86B7E6-82F6-71C5-B70C-82631F0F6518}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC86B7E6-82F6-71C5-B70C-82631F0F6518}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC86B7E6-82F6-71C5-B70C-82631F0F6518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,10 +16,9 @@ public class ButcherAttack : MonoBehaviour {
 	void Update () {
 		float dist = Vector3.Distance(player.transform.position, transform.position);
 		print("Distance to other: " + dist);
-		if (dist <= 15) {
-			print ("Attack");
-			anim.Play("Attack", -1, 0f);
-		}
+		if (dist >= 20) {
+			anim.Play ("Attack", -1, 0);
+		} 
 	}
 		
 }

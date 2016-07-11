@@ -18,7 +18,8 @@ public class ButcherAttack : MonoBehaviour {
 		//print("Distance to other: " + dist);
 		if (dist >= 20) {
 			anim.Play ("Attack", -1, 0f);
-		} 
+		}
+
 	}
 		
 }

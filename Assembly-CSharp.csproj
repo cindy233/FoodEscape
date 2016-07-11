@@ -62,6 +62,7 @@
      <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QueryMechanimController.cs" />
      <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QuerySoundController.cs" />
      <Compile Include="Assets\Scripts\ButcherAttack.cs" />
+     <Compile Include="Assets\TaichiAttack.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
      <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
      <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />

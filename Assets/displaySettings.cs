@@ -11,7 +11,7 @@ public class displaySettings : MonoBehaviour {
 	void Start () {
 		
 		selected = PlayerPrefs.GetInt ("selectedCharacter");
-		Capsule = GameObject.Find ("Capsule");
+		Capsule = GameObject.Find ("Potato");
 		FollowingPlayer fplayer = Capsule.GetComponent<FollowingPlayer> ();
 
 		switch (selected) {

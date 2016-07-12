@@ -9,8 +9,18 @@ public class ButcherAttack : MonoBehaviour {
 	private float nextActionTime = 0.1f;
 	public float period = 3f;
 
+	//private Transform myTransform;
+
+	void Awake(){
+		//myTransform = transform;
+	}
+
 	// Use this for initialization
 	void Start () {
+
+		//GameObject go = GameObject.FindGameObjectWithTag ("Player");
+		//target = go.transform;
+
 		anim = GetComponent<Animator> ();
 	}
 	
@@ -19,17 +29,21 @@ public class ButcherAttack : MonoBehaviour {
 		float dist = Vector3.Distance (player.transform.position, transform.position);
 		if (Time.time > nextActionTime) {
 			nextActionTime = Time.time + period;
-			if (dist <= 20) {
+			if (dist <= 15) {
 				anim.Play ("Attack", -1, 0f);
 
-			}
-			//print("Distance to other: " + dist);
+				PlayerBlood eh = (PlayerBlood)player.GetComponent ("PlayerBlood");
+				eh.AddJustCurrentHealty (-10);
 
-			/*if (Input.GetKeyDown("5")) {
-			print ("5 is pressed");
-			anim.Play ("HumanoidWalk",0,0f);
-		}
-		*/
+			}
+			else if ((15 < dist) && (dist <= 120)) {
+				anim.Play ("HumanoidWalk", 0, 0f);
+			} 
+			else if (dist > 120) {
+				anim.Play ("Default", 0, 0f);
+			}
+
+		
 		}
 	}
 }

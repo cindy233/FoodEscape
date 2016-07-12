@@ -49,3 +49,20 @@
 /Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/elena/Documents/hku/Summer Sem/Game design/Project/Code/FoodEscape/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/UnityEngine.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/UnityEditor.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Mono.Cecil.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Unity.DataContract.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/clarkyan/Documents/github-project/FoodEscape/Temp/bin/Debug/Mono.Cecil.Mdb.dll

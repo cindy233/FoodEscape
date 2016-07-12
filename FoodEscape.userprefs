@@ -1,10 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/displaySettings.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CameraControl.cs">
     <Files>
-      <File FileName="Assets/Scripts/ButcherAttack.cs" Line="21" Column="18" />
-      <File FileName="Assets/TaichiAttack.cs" Line="1" Column="1" />
-      <File FileName="Assets/displaySettings.cs" Line="1" Column="1" />
+      <File FileName="Assets/CameraControl.cs" Line="18" Column="100" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

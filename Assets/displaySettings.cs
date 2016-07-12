@@ -6,16 +6,27 @@ public class displaySettings : MonoBehaviour {
 	private int selected;
 	private GameObject player;
 	private GameObject Capsule;
-	private GameObject Butcher;
+	private GameObject[] Enemies;
+	private int enemyInd=3;
 
 	// Use this for initialization
 	void Start () {
-		
+
+		Enemies = new GameObject[enemyInd];
 		selected = PlayerPrefs.GetInt ("selectedCharacter");
 		Capsule = GameObject.Find ("Potato");
-		Butcher = GameObject.Find ("TheButcher");
+
+		for (int i = 0; i < enemyInd; i++) {
+		
+			string enemyName = "Enemy" + (i+1).ToString ();
+			GameObject ene = GameObject.Find (enemyName);
+			Enemies [i] = ene;
+		
+		}
+
+		//Butcher = GameObject.Find ("TheButcher");
 		FollowingPlayer fplayer = Capsule.GetComponent<FollowingPlayer> ();
-		ButcherAttack butcherAttack = Butcher.GetComponent<ButcherAttack> ();
+		//ButcherAttack butcherAttack = Butcher.GetComponent<ButcherAttack> ();
 
 		switch (selected) {
 		case 1:
@@ -23,7 +34,8 @@ public class displaySettings : MonoBehaviour {
 			player.SetActive (true);
 			transform.FindChild ("unitychan").gameObject.SetActive (false);
 			transform.FindChild ("querychan").gameObject.SetActive (false);
-			butcherAttack.player = player;
+			//butcherAttack.player = player;
+			UpdateEnemyPlayer();
 			break;
 		case 2:
 			player = transform.FindChild ("unitychan").gameObject;
@@ -31,7 +43,8 @@ public class displaySettings : MonoBehaviour {
 			transform.FindChild ("taichi1").gameObject.SetActive (false);
 			transform.FindChild ("unitychan").gameObject.SetActive (true);
 			transform.FindChild ("querychan").gameObject.SetActive (false);
-			butcherAttack.player = player;
+			//butcherAttack.player = player;
+			UpdateEnemyPlayer();
 			break;
 		case 3:
 			player = transform.FindChild ("querychan").gameObject;
@@ -39,7 +52,8 @@ public class displaySettings : MonoBehaviour {
 			transform.FindChild ("taichi1").gameObject.SetActive (false);
 			transform.FindChild ("unitychan").gameObject.SetActive (false);
 			transform.FindChild ("querychan").gameObject.SetActive (true);
-			butcherAttack.player = player;
+			//butcherAttack.player = player;
+			UpdateEnemyPlayer();
 			break;
 		default:
 			break;
@@ -52,5 +66,16 @@ public class displaySettings : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void UpdateEnemyPlayer(){
+	
+		for (int i = 0; i < enemyInd; i++) {
+
+			ButcherAttack butcherAttack = Enemies[i].GetComponent<ButcherAttack> ();
+
+			butcherAttack.player = player;
+
+		}
 	}
 }

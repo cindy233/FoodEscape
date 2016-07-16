@@ -243,11 +243,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
-			Debug.Log ("Start");
-            Rigidbody body = hit.collider.attachedRigidbody;
+			Rigidbody body = hit.collider.attachedRigidbody;
 
 			if (hit.gameObject.name == "Enemy") {
-				Debug.Log ("HIT Enemy!");
 				SceneManager.LoadScene("BattleScene");
 			}
             //dont move the rigidbody if the character is on top of it

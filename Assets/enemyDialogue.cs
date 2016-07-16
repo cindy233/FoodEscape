@@ -1,51 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class foodDialogue : MonoBehaviour {
+public class enemyDialogue : MonoBehaviour {
 
 	private GameObject player;
 	private bool show = false;
 	private bool display = true;
-	private int enemyDialogue = 1;
 	private GUIStyle titleStyle;
 	private GUIStyle normalText;
 	public Texture enterBtn;
-	public Texture potatoPic;
+	public Texture enemyPic;
 
 	// Use this for initialization
 	void Start () {
 
 		player = GameObject.Find ("FPSController");
+		PlayerPrefs.SetInt("enemyDialogue",1);
 
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		// Calculate the distance between the user and the potato
+		// Calculat the distance between the user and the butcher
 		float dist = Vector3.Distance (transform.position, player.transform.position);
 
-		enemyDialogue = PlayerPrefs.GetInt ("enemyDialogue");
-
 		if (display) {
-
+			
 			if (dist <= 15) {
-				if (enemyDialogue == 0)
-					show = false;
-				else {
-					show = true;
-					display = false;
-				}
+				show = true;
+				display = false;
 			} else
 				show = false;
-
+	
 		}
 		if (Input.GetKeyDown(KeyCode.Return)) {
 
 			show = false;
+			PlayerPrefs.SetInt("enemyDialogue",1);
 		}
-
-
 	}
 
 	void OnGUI(){
@@ -66,13 +59,17 @@ public class foodDialogue : MonoBehaviour {
 			int middleX = (Screen.width - 100)/2;
 			int middleY = (Screen.height - 100)/2;
 			GUI.Box (new Rect (middleX, middleY, 280, 120),"");
-			GUI.Label (new Rect (middleX+10, middleY+10,100,20),"Potato",titleStyle);
-			GUI.Label (new Rect (middleX+70, middleY+35,100,20),"Please help me!!!",normalText);
-			GUI.Label (new Rect (middleX+70, middleY+55,100,20),"The Butcher is going to kill me!",normalText);
+			GUI.Label (new Rect (middleX+10, middleY+10,100,20),"Butcher",titleStyle);
+			GUI.Label (new Rect (middleX+80, middleY+28,100,20),"Little kid, you want to save \nthose food?",normalText);
+			GUI.Label (new Rect (middleX+80, middleY+60,100,20),"Let's have a battle!",normalText);
 			GUI.DrawTexture (new Rect (middleX+210, middleY+80,60,30),enterBtn);
-			GUI.DrawTexture (new Rect (middleX+10, middleY+30, 50, 70),potatoPic);
+			GUI.DrawTexture (new Rect (middleX+10, middleY+30, 70, 80),enemyPic);
+			PlayerPrefs.SetInt("enemyDialogue",0);
+
 
 		}
+		else
+			PlayerPrefs.SetInt("enemyDialogue",1);
 
 
 	}

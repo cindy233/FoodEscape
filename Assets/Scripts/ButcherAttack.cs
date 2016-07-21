@@ -7,7 +7,7 @@ public class ButcherAttack : MonoBehaviour {
 	private float dist;
 	public Animator anim;
 	private float nextActionTime = 0.1f;
-	public float period = 3f;
+	public float period = 1.5f;
 
 	//private Transform myTransform;
 

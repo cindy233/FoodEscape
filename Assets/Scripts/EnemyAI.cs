@@ -36,7 +36,8 @@ public class EnemyAI : MonoBehaviour {
 		if (distance <= 15f) {
 			moveSpeed = 0;
 			rotationSpeed = 0;
-		} else if (15f <= distance && (distance <=120f)) {
+		} 
+		else if (15f <= distance && (distance <=120f)) {
 			moveSpeed = 20;
 			rotationSpeed = 10;
 			//anim.Play ("Attack", -1, 0f);

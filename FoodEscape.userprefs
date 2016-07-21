@@ -1,8 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TaichiAttack.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/enemyDialogue.cs">
     <Files>
+      <File FileName="Assets/potatoMovement.cs" Line="45" Column="53" />
       <File FileName="Assets/TaichiAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets/exitDetect.cs" Line="21" Column="26" />
+      <File FileName="Assets/enemyDialogue.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

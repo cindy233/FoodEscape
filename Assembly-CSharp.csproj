@@ -45,9 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraControl.cs" />
-     <Compile Include="Assets\FollowingPlayer.cs" />
-     <Compile Include="Assets\Instructions.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -102,27 +99,31 @@
      <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QueryMechanimController.cs" />
      <Compile Include="Assets\PQAssets\Query-Chan\Scripts\QuerySoundController.cs" />
      <Compile Include="Assets\Scripts\ButcherAttack.cs" />
+     <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\Enemy1Blood.cs" />
      <Compile Include="Assets\Scripts\Enemy2Blood.cs" />
      <Compile Include="Assets\Scripts\Enemy3Blood.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\FollowingPlayer.cs" />
+     <Compile Include="Assets\Scripts\Instructions.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayerBlood.cs" />
-     <Compile Include="Assets\TaichiAttack.cs" />
+     <Compile Include="Assets\Scripts\TaichiAttack.cs" />
+     <Compile Include="Assets\Scripts\displaySettings.cs" />
+     <Compile Include="Assets\Scripts\displayWinScene.cs" />
+     <Compile Include="Assets\Scripts\enemyDialogue.cs" />
+     <Compile Include="Assets\Scripts\exitDetect.cs" />
+     <Compile Include="Assets\Scripts\foodDialogue.cs" />
+     <Compile Include="Assets\Scripts\potatoMovement.cs" />
+     <Compile Include="Assets\Scripts\selection.cs" />
+     <Compile Include="Assets\Scripts\startAnimate.cs" />
+     <Compile Include="Assets\Scripts\startGame.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
      <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
      <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
      <Compile Include="Assets\UnityChan\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
-     <Compile Include="Assets\displaySettings.cs" />
-     <Compile Include="Assets\enemyDialogue.cs" />
-     <Compile Include="Assets\exitDetect.cs" />
-     <Compile Include="Assets\foodDialogue.cs" />
-     <Compile Include="Assets\potatoMovement.cs" />
-     <Compile Include="Assets\selection.cs" />
-     <Compile Include="Assets\startAnimate.cs" />
-     <Compile Include="Assets\startGame.cs" />
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class enemyDialogue : MonoBehaviour {
 
@@ -34,11 +35,16 @@ public class enemyDialogue : MonoBehaviour {
 				show = false;
 	
 		}
-		if (Input.GetKeyDown(KeyCode.Return)) {
+		if (Input.GetKeyDown(KeyCode.Return) && show) {
 
 			show = false;
-			PlayerPrefs.SetInt("enemyDialogue",1);
+			PlayerPrefs.SetInt("enemyDialogue",3);
+
 		}
+
+		int enemyPressed = PlayerPrefs.GetInt ("enemyDialogue");
+		if (enemyPressed==3)
+			SceneManager.LoadScene("BattleScene");
 	}
 
 	void OnGUI(){

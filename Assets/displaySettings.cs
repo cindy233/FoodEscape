@@ -27,6 +27,7 @@ public class displaySettings : MonoBehaviour {
 		//Butcher = GameObject.Find ("TheButcher");
 		FollowingPlayer fplayer = Capsule.GetComponent<FollowingPlayer> ();
 		//ButcherAttack butcherAttack = Butcher.GetComponent<ButcherAttack> ();
+		CameraControl cControl = GameObject.Find("Main Camera").GetComponent<CameraControl>();
 
 		switch (selected) {
 		case 1:
@@ -35,7 +36,8 @@ public class displaySettings : MonoBehaviour {
 			transform.FindChild ("unitychan").gameObject.SetActive (false);
 			transform.FindChild ("querychan").gameObject.SetActive (false);
 			//butcherAttack.player = player;
-			UpdateEnemyPlayer();
+			UpdateEnemyPlayer ();
+			cControl.target = player.transform;
 			break;
 		case 2:
 			player = transform.FindChild ("unitychan").gameObject;
@@ -44,7 +46,8 @@ public class displaySettings : MonoBehaviour {
 			transform.FindChild ("unitychan").gameObject.SetActive (true);
 			transform.FindChild ("querychan").gameObject.SetActive (false);
 			//butcherAttack.player = player;
-			UpdateEnemyPlayer();
+			UpdateEnemyPlayer ();
+			cControl.target = player.transform;
 			break;
 		case 3:
 			player = transform.FindChild ("querychan").gameObject;
@@ -53,7 +56,8 @@ public class displaySettings : MonoBehaviour {
 			transform.FindChild ("unitychan").gameObject.SetActive (false);
 			transform.FindChild ("querychan").gameObject.SetActive (true);
 			//butcherAttack.player = player;
-			UpdateEnemyPlayer();
+			UpdateEnemyPlayer ();
+			cControl.target = player.transform;
 			break;
 		default:
 			break;

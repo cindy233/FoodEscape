@@ -117,7 +117,9 @@
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\displaySettings.cs" />
      <Compile Include="Assets\enemyDialogue.cs" />
+     <Compile Include="Assets\exitDetect.cs" />
      <Compile Include="Assets\foodDialogue.cs" />
+     <Compile Include="Assets\potatoMovement.cs" />
      <Compile Include="Assets\selection.cs" />
      <Compile Include="Assets\startAnimate.cs" />
      <Compile Include="Assets\startGame.cs" />

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerBlood : MonoBehaviour {
 
@@ -23,6 +24,8 @@ public class PlayerBlood : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		AddJustCurrentHealty (0);
+		if(curHealty == 0 || curHealty <0)
+			SceneManager.LoadScene ("Game Over");
 	}
 
 	void OnGUI(){
@@ -38,7 +41,7 @@ public class PlayerBlood : MonoBehaviour {
 	public void AddJustCurrentHealty(int adj){
 		curHealty += adj;
 
-		if(curHealty < 0)
+		if (curHealty < 0) 
 			curHealty = 0;
 
 		if (curHealty > maxHealth)

@@ -108,7 +108,6 @@
      <Compile Include="Assets\Scripts\Instructions.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayerBlood.cs" />
-     <Compile Include="Assets\Scripts\TaichiAttack.cs" />
      <Compile Include="Assets\Scripts\displaySettings.cs" />
      <Compile Include="Assets\Scripts\displayWinScene.cs" />
      <Compile Include="Assets\Scripts\enemyDialogue.cs" />

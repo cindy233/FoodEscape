@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class exitDetect : MonoBehaviour {
 
+	public string SceneName="Level2";
 	// Use this for initialization
 	void Start () {
 	
@@ -11,14 +12,14 @@ public class exitDetect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	void OnCollisionEnter (Collision col)
 	{
 		if(col.gameObject.tag == "Player")
 		{
-			SceneManager.LoadScene ("Win Scene");
+			SceneManager.LoadScene (SceneName);
 		}
 	}
 }

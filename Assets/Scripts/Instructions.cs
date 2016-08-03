@@ -5,7 +5,7 @@ public class Instructions : MonoBehaviour {
 
 	// Use this for initialization
 	public bool showGUI = true;
-
+	/*
 	void OnGUI()
 	{if (showGUI) {
 			GUI.Box (new Rect (Screen.width - 245, 10, 240, 150), "M: Show/Hide Instructions");
@@ -25,5 +25,5 @@ public class Instructions : MonoBehaviour {
 			print("M key was pressed");
 			showGUI = !showGUI;
 		}
-	}
+	}*/
 }

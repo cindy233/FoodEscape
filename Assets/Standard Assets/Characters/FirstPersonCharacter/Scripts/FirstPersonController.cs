@@ -246,7 +246,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			Rigidbody body = hit.collider.attachedRigidbody;
 
 			if (hit.gameObject.name == "Enemy") {
-				SceneManager.LoadScene("BattleScene");
+				SceneManager.LoadScene("Level1");
 			}
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below)

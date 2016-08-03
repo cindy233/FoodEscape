@@ -7,12 +7,15 @@ public class Enemy1Blood : MonoBehaviour {
 	public int curHealty = 100;
 
 	public float healtyBarLength;
+	public float fixedMaxBarLength;
 	public Texture enemy1;
 	GUIStyle style = new GUIStyle();
+	public Texture2D bloodBar;
 
 	// Use this for initialization
 	void Start () {
 		healtyBarLength = Screen.width / 4;
+		fixedMaxBarLength = Screen.width / 4;
 	}
 
 	// Update is called once per frame
@@ -22,7 +25,8 @@ public class Enemy1Blood : MonoBehaviour {
 
 	void OnGUI(){
 		GUI.Box (new Rect (250, 20, 35, 35), enemy1, style);
-		GUI.Box (new Rect (290, 20, healtyBarLength, 20), curHealty + "/" + maxHealth);
+		GUI.Box (new Rect (290, 20, fixedMaxBarLength, 20),curHealty + "/" + maxHealth);
+		GUI.Box (new Rect (290, 20, healtyBarLength, 20), "");
 	}
 
 

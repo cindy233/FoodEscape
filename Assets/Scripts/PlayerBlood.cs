@@ -8,6 +8,7 @@ public class PlayerBlood : MonoBehaviour {
 	public int curHealty = 100;
 
 	public float healtyBarLength;
+	public float LeastHealtyBarLength;
 
 	public Texture player1;
 	public Texture potato1;
@@ -19,12 +20,13 @@ public class PlayerBlood : MonoBehaviour {
 	void Start () {
 		//content = new GUIContent(player1, curHealty + "/" + maxHealth);
 		healtyBarLength = Screen.width / 4;
+		LeastHealtyBarLength = Screen.width / 10;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		AddJustCurrentHealty (0);
-		if(curHealty == 0 || curHealty <0)
+		if(curHealty == 0)
 			SceneManager.LoadScene ("Game Over");
 	}
 
@@ -51,5 +53,10 @@ public class PlayerBlood : MonoBehaviour {
 			maxHealth = 1;
 
 		healtyBarLength = (Screen.width / 4) * (curHealty / (float)maxHealth);
+
+		if (healtyBarLength < LeastHealtyBarLength) {
+			healtyBarLength = LeastHealtyBarLength;
+		}
+
 	}
 }

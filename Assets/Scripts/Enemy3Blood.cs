@@ -7,17 +7,26 @@ public class Enemy3Blood : MonoBehaviour {
 	public int curHealty = 100;
 
 	public float healtyBarLength;
+	public float LeastHealtyBarLength;
+
 	public Texture enemy3;
 	GUIStyle style = new GUIStyle();
+
 
 	// Use this for initialization
 	void Start () {
 		healtyBarLength = Screen.width / 4;
+		LeastHealtyBarLength = Screen.width / 10;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		AddJustCurrentHealty (0);
+		if (curHealty == 0) {
+			GameObject go3 = GameObject.Find ("Enemy3");
+			go3.SetActive (false);
+			//Destroy(go3);
+		}
 	}
 
 	void OnGUI(){
@@ -27,6 +36,7 @@ public class Enemy3Blood : MonoBehaviour {
 
 
 	public void AddJustCurrentHealty(int adj){
+
 		curHealty += adj;
 
 		if(curHealty < 0)
@@ -35,9 +45,10 @@ public class Enemy3Blood : MonoBehaviour {
 		if (curHealty > maxHealth)
 			curHealty = maxHealth; 
 
-		if (maxHealth < 1)
-			maxHealth = 1;
-
 		healtyBarLength = (Screen.width / 4) * (curHealty / (float)maxHealth);
+
+		if (healtyBarLength < LeastHealtyBarLength) {
+			healtyBarLength = LeastHealtyBarLength;
+		}
 	}
 }

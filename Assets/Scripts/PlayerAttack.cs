@@ -5,9 +5,15 @@ public class PlayerAttack : MonoBehaviour {
 	public Animator anim;
 	// Use this for initialization
 
+	public GameObject player;
+	public GameObject go4;
+	public GameObject go5;
+
 	public Transform target1;
 	public Transform target2;
 	public Transform target3;
+	public Transform cake;
+	public Transform waffle;
 
 	public float attackTimer;
 	public float coolDowm;
@@ -26,6 +32,13 @@ public class PlayerAttack : MonoBehaviour {
 
 		GameObject go3 = GameObject.Find ("Enemy3");
 		target3 = go3.transform;
+
+		go4 = GameObject.Find ("Cake");
+		cake = go4.transform;
+
+		go5 = GameObject.Find ("Waffle");
+		waffle = go5.transform;
+
 	}
 	
 	// Update is called once per frame
@@ -54,7 +67,7 @@ public class PlayerAttack : MonoBehaviour {
 			}
 		}
 		if (Input.GetKeyDown("3")) {
-			print ("3 is pressed");
+			print ("3 is pressed");	
 			anim.Play ("kick_21",0,0f);
 			if (attackTimer == 0) {
 				Attack (-15);
@@ -66,7 +79,7 @@ public class PlayerAttack : MonoBehaviour {
 		if (Input.GetKeyDown("4")) {
 			print ("4 is pressed");
 			anim.Play ("damage_22",0,0f);
-			Attack (0);
+			Eat();
 
 		}
 	}
@@ -102,7 +115,39 @@ public class PlayerAttack : MonoBehaviour {
 			Enemy3Blood eh3 = (Enemy3Blood)target3.GetComponent ("Enemy3Blood");
 			eh3.AddJustCurrentHealty (adj);
 		}
-
-
 	} 
+
+
+	private void Eat(){
+
+
+        
+	    
+
+		if (GameObject.Find ("Cake") != null) {
+			float distance4 = Vector3.Distance (cake.transform.position, transform.position);
+			Vector3 dir4 = (cake.transform.position - transform.position).normalized;
+			float direction4 = Vector3.Dot (dir4, transform.forward);
+			if (distance4 < 20f)
+			if (direction4 > 0) {
+				PlayerBlood eh = (PlayerBlood)GetComponent ("PlayerBlood");
+				eh.AddJustCurrentHealty (50);
+				Destroy (go4);
+			}
+		}
+
+		if (GameObject.Find ("Waffle") != null) {
+			float distance5 = Vector3.Distance (waffle.transform.position, transform.position);
+			Vector3 dir5 = (waffle.transform.position - transform.position).normalized;
+			float direction5 = Vector3.Dot (dir5, transform.forward);
+			if (distance5 < 20f)
+			if (direction5 > 0) {
+				PlayerBlood eh = (PlayerBlood)GetComponent ("PlayerBlood");
+				eh.AddJustCurrentHealty (50);
+				Destroy (go5);
+			}
+		}
+
+	}
+
 }

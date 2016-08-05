@@ -16,7 +16,12 @@ public class FollowingPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		transform.position = player.transform.position + offset;
+
+		if(transform.position.x <= -122)
+			transform.position = player.transform.position - offset;
+		
 		transform.position = new Vector3(transform.position.x, startPosition.y + Mathf.Sin(Time.time * maxSpeed), transform.position.z);
 
 	}

@@ -9,6 +9,9 @@ public class Enemy1Blood : MonoBehaviour {
 	public float healtyBarLength;
 	public float LeastHealtyBarLength;
 
+	private float bloodLocation;
+	private float enemyImageLocation;
+
 	public Texture enemy1;
 	GUIStyle style = new GUIStyle();
 
@@ -16,6 +19,8 @@ public class Enemy1Blood : MonoBehaviour {
 	void Start () {
 		healtyBarLength = Screen.width / 4;
 		LeastHealtyBarLength = Screen.width / 10;
+		bloodLocation = Screen.width / 2;
+		enemyImageLocation = bloodLocation + 40;
 	}
 
 	// Update is called once per frame
@@ -31,8 +36,8 @@ public class Enemy1Blood : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		GUI.Box (new Rect (250, 20, 35, 35), enemy1, style);
-		GUI.Box (new Rect (290, 20, healtyBarLength, 20), curHealty + "/" + maxHealth);
+		GUI.Box (new Rect (bloodLocation, 20, 35, 35), enemy1, style);
+		GUI.Box (new Rect (enemyImageLocation, 20, healtyBarLength, 20), curHealty + "/" + maxHealth);
 	}
 
 

@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/selection.cs">
     <Files>
-      <File FileName="Assets/TaichiCharacterPack/TwinViewer/Scripts/taichi_twin2nd_scenescript.js" Line="1126" Column="1" />
+      <File FileName="Assets/TaichiCharacterPack/TwinViewer/Scripts/taichi_twin2nd_scenescript.js" Line="1" Column="1" />
       <File FileName="Assets/Scripts/selection.cs" Line="66" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>

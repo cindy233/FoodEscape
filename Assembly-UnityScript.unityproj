@@ -127,6 +127,7 @@
      <None Include="Assets\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\stage_texture_list.txt" />
      <None Include="Assets\PQAssets\Query-Chan\Shaders\PQ_VertexShadow.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Scripts\storyScript.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />

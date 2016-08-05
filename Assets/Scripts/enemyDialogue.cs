@@ -44,7 +44,7 @@ public class enemyDialogue : MonoBehaviour {
 
 		int enemyPressed = PlayerPrefs.GetInt ("enemyDialogue");
 		if (enemyPressed==3)
-			SceneManager.LoadScene("BattleScene");
+			SceneManager.LoadScene("Level1");
 	}
 
 	void OnGUI(){
